@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Formulario de Registro del Gimnasio SportTime</h1>
+    <p id="description"> Qureremos conocerte para brindarte un mejor servicio </p>
+
+    <form id="survey-form">
+
+      <fieldset>
+        <label for="name" id="name-label">Ingrese su Nombre:
+          <input id="name" type="text" name="name" placeholder="Susana" required />
+        </label>
+      
+        <label for="email" id="email-label"> Ingrese su email:
+            <input id="email" type="email" required placeholder="susana@gimenez.com"/>
+            </label>
+
+        <label for="numbre" id="number-label">Ingrese su edad (opcional):<input id="number" type="number" min="13" max="100" placeholder="79" checked/></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Cuántos días por semana entrenás?</legend>
+        <label for="dropdown">
+          <select id="dropdown">
+            <option>(seleccione una opción)</option>
+            <option>4 a 5</option>
+            <option>2 a 4</option>
+            <option>1 a 2</option>
+          </select>
+        </label>
+      </fieldset>
+    
+      <fieldset>
+        <legend>¿Qué plan de gimnasio te gustaria?</legend>
+        <label id="simple">
+          <input id="simple" type="radio" class="inline" value="1" name="plan" checked/> Simple
+        </label>
+
+        <label for="premium">
+          <input id="premium" type="radio" class="inline" value="2" name="plan"/> Premium
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Qué es lo que más te gusta entrenar?</legend>
+        <input type="checkbox" id="opcion1" name="opciones" value="opcion1"/>
+        <label for="opcion1" name="opciones">Pecho</label>
+
+        <input type="checkbox" id="opcion2" name="opciones" value="opcion2"/>
+        <label for="opcion2" name="opciones">Espalda</label>
+
+        <input type="checkbox" id="opcion3" name="opciones" value="opcion3"/>
+        <label for="opcion3" name="opciones">Piernas</label>
+
+        <input type="checkbox" id="opcion4" name="opciones" value="opcion4"/>
+        <label for="opcion4" name="opciones">Brazos</label>
+      </fieldset>
+
+
+      <fieldset>
+        <label>Deja tu biografia
+        <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Me gusta entrenar por la tarde..."></textarea></label>
+      </fieldset>
+
+      <input id="submit" value="Enviar" type="submit" class="submit"/>
+    </form>
+</body>
